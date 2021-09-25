@@ -1,0 +1,31 @@
+.divpadding {
+  background-color: #c98bb4b0;
+  padding: 5vw;
+}
+
+.subheads {
+  padding: 2vw;
+}
+
+header h1 {
+  background-color: #d649a7b0;
+  padding: 3vw;
+  margin: 0vw;
+}
+
+footer div {
+  background-color: #d649a7b0;
+}
+
+footer div h4 {
+  padding: 7vw;
+}
+
+.food {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-preferred-size: 100%;
+      flex-basis: 100%;
+}
+/*# sourceMappingURL=index.css.map */
