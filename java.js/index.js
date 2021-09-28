@@ -1,10 +1,10 @@
 
 
 function calculateInvoice (starterPrice, maindishPrice, dessertPrice, beveragePrice) {
-    var summ = Number(shrimps) + Number(pizza) + Number(Bo) + Number(Fanta);
-    console.log = (summ);
+    const shrimps = Number(starterPrice);
+    const pizza = Number(maindishPrice);
+    const Bo = Number(dessertPrice);
+    const Fanta = Number(beveragePrice);
+    returns (s + m + d + b);
 }
-var shrimps = "3.50";
-var pizza = "4";
-var Bo = "5";
-var Fanta = "1.50";
+console.log("summ= Starter : shrimps(3.50€), Main: Pizza(")
