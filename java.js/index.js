@@ -26,27 +26,74 @@ function drinks (a,b,c,d){
     return a*bvrgs[0] + b*bvrgs[1] + c*bvrgs[2] + d*bvrgs[3]
 };
 
-function calculator (starterPrice, maindishPrice, dessertPrice, beveragePrice) {
-   
+
+function calculateInvoice (starterPrice,maindishPrice,dessertPrice,beveragePrice) {
+    let invoice1 = starterPrice + maindishPrice + dessertPrice + beveragePrice;
+    console.table("Receide Calculation ="+invoice1.toFixed(2)+"€");
     
 };
 
-var starterPrice = Appetizer(1,2)
+var starterPrice = Appetizer(0,0,0,1)
 
-var maindishPrice = haupt(0,3)
+var maindishPrice = haupt(0,0,1,0)
 
-var dessertPrice = dessert(0,0)
+var dessertPrice = dessert(0,0,0,1)
 
-var beveragePrice = drinks(0,0)
+var beveragePrice= drinks(0,0,0,1)
 
-calculator(starterPrice, maindishPrice, dessertPrice, beveragePrice);
+calculateInvoice (starterPrice,maindishPrice,dessertPrice,beveragePrice);
 
-function StuOrder(
-    starterPrice, maindishPrice, dessertPrice, beveragePrice
-) {
-
-let studentbill = starterPrice + maindishPrice + dessertPrice + beveragePrice;
-let discount = studentbill + (0.9)*studentbill + dessertPrice;
-console.table("Receid after Stu.Discount="+studentbill.toFixed+"€")
-return studentbill;
+/* this function below calculates the student (tabel) order */
+function calculatorstu (starterPrice, maindishPrice, dessertPrice, beveragePrice) {
+    let studentbill = starterPrice + maindishPrice + dessertPrice + beveragePrice;
+    let discount = studentbill - (0.1)*studentbill + dessertPrice;
+    console.table("Receide after 10% Uni-Discount=" + discount.toFixed(2) + "€");
+    return discount;
 };
+
+var starterPrice = Appetizer(1,2,0,0)
+
+var maindishPrice = haupt(0,3,0,0)
+
+var dessertPrice = dessert(0,0,0,0)
+
+var beveragePrice = drinks(2,0,1,0)
+
+calculatorstu (starterPrice, maindishPrice, dessertPrice, beveragePrice);
+
+/* in this calulation my uncle came to visit my store with the fam. :) */
+function viporder (starterPrice,maindishPrice,dessertPrice,beveragePrice) {
+    let jafer = starterPrice + maindishPrice + dessertPrice + beveragePrice;
+    console.table("Receide ="+jafer.toFixed(2)+"€");
+    
+};
+
+var starterPrice = Appetizer(4,0,0,2)
+
+var maindishPrice = haupt(1,3,2,0)
+
+var dessertPrice = dessert(2,2,1,1)
+
+var beveragePrice= drinks(0,2,0,4)
+
+viporder (starterPrice,maindishPrice,dessertPrice,beveragePrice);
+
+
+/* one more calculation for a imaginary drive in */
+function ToGo (starterPrice,maindishPrice,dessertPrice,beveragePrice) {
+    let driveIn = starterPrice + maindishPrice + dessertPrice + beveragePrice;
+    console.table("To go, receide ="+driveIn.toFixed(2)+"€");
+    
+};
+
+var starterPrice = Appetizer(1,0,1,0)
+
+var maindishPrice = haupt(0,0,1,0)
+
+var dessertPrice = dessert(1,0,1,0)
+
+var beveragePrice= drinks(1,2,0,1)
+
+ToGo (starterPrice,maindishPrice,dessertPrice,beveragePrice);
+
+
