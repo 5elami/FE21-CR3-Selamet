@@ -1,0 +1,24 @@
+* {
+  margin: 0%;
+}
+
+.divpadding {
+  background-color: #b67e34;
+  padding: 5vw;
+}
+
+.subheads {
+  padding: 2vw;
+}
+
+h1 {
+  background-color: #ceb66a;
+  padding: 3vw;
+  margin: 0vw;
+}
+
+footer div {
+  background-color: #d649a7b0;
+  padding: 7vw;
+}
+/*# sourceMappingURL=rtng.css.map */
